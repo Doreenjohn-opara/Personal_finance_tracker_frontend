@@ -1,0 +1,148 @@
+* { 
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+.brand-black, .brand-black a, .brand-black span  {
+    color: #1A1A26 !important;
+}
+
+.brand-gray, .brand-gray a, .brand-gray span  {
+    color: #727473 !important;
+}
+
+.brand-blue, .brand-blue a, .brand-blue span {
+  color: #33318b !important;
+}
+
+.section {
+    width: 100%;
+    height: 100vh;
+  }
+  
+.section-inner {
+    width: 100%;
+    height: 100%;
+    display: flex;
+  }
+  
+.section-inner .pair {
+    height: 100%;
+  } 
+  
+.section-inner .pair.left {
+    width: 45%;
+  }
+  
+.section-inner .pair.right {
+    width: 60%;
+    background-color: rgb(51, 49, 139); 
+  background-image: url("/images/essentials/Budgeteer_resize.png");
+  background-position: center;
+  background-size: contain;
+}
+
+.auth-form {
+    width: 500px;
+    padding: 6rem 3.5rem;
+}
+
+.form-group {
+  width: 100%;
+}
+
+.form-group .control-wrapper {
+    width: 100%;
+    position: relative;
+}
+
+.form-group .form-control {
+    width: 100%;
+    padding: 1.15rem 1rem;
+    outline: none;
+    border: 1px solid #dae0ed;
+
+  -webkit-transition: all 0.35s ease-out;
+  -moz-transition: all 0.35s ease-out;
+  transition: all 0.35s ease-out;
+  }
+
+.control-wrapper input.form-control{
+    border-radius: 15px;
+}
+
+.form-group .input-icon {
+    left: 1.2rem;
+    top: 55%;
+}
+
+.form-group .eye-icon {
+  right: 1.2rem;
+  top: 55%;
+}
+
+.form-control:focus {
+border: 1px solid #0000ee;
+}
+
+.form-group .btn {
+  display: block;
+  width: 100%;
+  padding: 1.3rem 1.2rem;
+  background: #33318b;
+  text-align: center;
+  border-radius: 15px;
+}
+
+.auth-form .auth-divider {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding: 1rem 0;
+}
+  
+.auth-form .auth-divider hr {
+  width: 100%;
+}
+
+.auth-divider p {
+  padding: 0.5rem 1rem;
+  color: #727473;
+  background-color: white;
+  top: -10px;
+  left: 20%;
+  width: 100%;
+  white-space: nowrap;
+  display: flex;
+  gap: 8px;
+}
+
+.pair-divider {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding: 3rem 0;
+}
+
+.pair-divider p {
+  padding: 0.5rem 0.5rem;
+  color: #727473;
+  background-color: white;
+  top: -10px;
+  left: 20%;
+  width: 100%;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 8px;
+}
+
+
+
+
