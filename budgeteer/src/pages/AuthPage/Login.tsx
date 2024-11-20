@@ -50,10 +50,6 @@ const Login = () => {
                 text="Login" 
                 onClick={handleLogin} 
                 />
-                {/* <button
-                type="button"
-                onClick={handleLogin} 
-                >Login</button> */}
               </form>
               <div className="auth-divider">
                 <hr />

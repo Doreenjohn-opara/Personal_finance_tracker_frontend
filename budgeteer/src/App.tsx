@@ -4,6 +4,7 @@ import './App.css';
 import Signup from './pages/AuthPage/Signup';
 import Login from './pages/AuthPage/Login';
 import Dashboard from './pages/Dashboard/Dashboard';
+import MasterLayout from './components/masterLayout/MasterLayout';
 
 const App: React.FC = () => {
   
@@ -14,8 +15,8 @@ const App: React.FC = () => {
           <Routes>
             <Route path="/signup" element={<Signup />} />
             <Route path="/login" element={<Login />}/>
-            <Route path="/" element={<Dashboard/>}>
-              <Route path="" element="" />
+            <Route path="/" element={<MasterLayout />}>
+              <Route path="" element={<Dashboard />} />
             </Route>
           </Routes>
         </div>

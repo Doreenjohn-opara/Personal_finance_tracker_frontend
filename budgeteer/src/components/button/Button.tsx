@@ -8,15 +8,15 @@ const Button = (props: IButton) => {
         text,
         onClick
     } = props;
+    
   return (
     <>
         <div className='form-group ui-relative mrgt2'>
-            <button className='btn font-aeonik-bold onwhite' onClick={()=>onClick} type="button">
+            <button className='btn font-aeonik-bold onwhite' onClick={onClick} type="button">
                  {text}
             </button> 
         </div>
-    </>
-    
+    </> 
   )
 }
 

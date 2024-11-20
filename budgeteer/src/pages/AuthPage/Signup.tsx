@@ -2,13 +2,18 @@ import React, { useState } from "react";
 import TextInput from "../../components/input/TextInput";
 import PasswordInput from "../../components/input/PasswordInput";
 import Button from "../../components/button/Button";
-import { Link } from "react-router-dom";
-// import budgeteer from "";
+import { Link, useNavigate } from "react-router-dom";
+
 
 const Signup = () => {
   const [username, setUsername] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const navigate = useNavigate();
+
+  const handleLogin = () => {
+    navigate("/"); // Navigate to the dashboard after login
+  };
   return (
     <>
       <section className="section">
@@ -50,7 +55,7 @@ const Signup = () => {
                     setPassword(e.target.value);
                   }}
                 />
-                <Button text="Sign Up" onClick={(e) => {}} />
+                <Button text="Sign Up" onClick={handleLogin} />
               </form>
               <div className="auth-divider">
                 <hr />
